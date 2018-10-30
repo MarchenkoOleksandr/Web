@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/vendor.css"> 
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Test from Marchenko Alexander</title>
+</head>
+<body>
+    <div class="container">
+        <div class="currency-select">
+            <h2>Select currency to exhange:</h2>
+            <select name="" id="selectCurrency" onchange="selectValue()">
+                <option id="$" value="https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCUSD">USD</option>
+                <option id="€" value="https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCEUR">EUR</option>
+                <option id="₽" value="https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCRUB">RUB</option>
+                <option id="£" value="https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCGBP">GBP</option>
+            </select>
+        </div>
+        <main>
+            <div class="exchange-item ethereum">
+                <h3>Ethereum</h3>
+                <div class="exchange-item-row price">
+                    <p>Price:</p>
+                    <p class="prices"></p>
+                </div>
+                <div class="exchange-item-row percent-change">
+                    <p>Percent change</p>
+                    <label class="switch">
+                        <input type="checkbox" class="checkbox" onclick="toggleCheck()"> 
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Hour change</p>
+                    <p class="hours text-green"></p>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Day change</p>
+                    <p class="days text-green"></p>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Week change</p>
+                    <p class="weeks text-green"></p>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Month change</p>
+                    <p class="months text-green"></p>
+                </div>
+            </div>
+            <div class="exchange-item litecoin">
+                <h3>Litecoin</h3>
+                <div class="exchange-item-row price">
+                    <p>Price:</p>
+                    <p class="prices"></p>
+                </div>
+                <div class="exchange-item-row percent-change">
+                    <p>Percent change</p>
+                    <label class="switch">
+                        <input type="checkbox" class="checkbox" onclick="toggleCheck()"> 
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Hour change</p>
+                    <p class="hours text-green"></p>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Day change</p><p class="days text-green"></p>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Week change</p>
+                    <p class="weeks text-green"></p>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Month change</p>
+                    <p class="months text-green"></p>
+                </div>
+            </div>
+            <div class="exchange-item bitcoin">
+                <h3>Bitcoin</h3>
+                <div class="exchange-item-row price">
+                    <p>Price:</p>
+                    <p class="prices"></p>
+                </div>
+                <div class="exchange-item-row percent-change">
+                    <p>Percent change</p>
+                    <label class="switch">
+                        <input type="checkbox" class="checkbox" onclick="toggleCheck()"> 
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Hour change</p>
+                    <p class="hours text-green"></p>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Day change</p>
+                    <p class="days text-green"></p>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Week change</p>
+                    <p class="weeks text-green"></p>
+                </div>
+                <div class="exchange-item-row change-row">
+                    <p>Month change</p>
+                    <p class="months text-green"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

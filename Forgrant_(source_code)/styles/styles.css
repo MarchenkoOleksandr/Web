@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700");
+.browserupgrade{
+    background: #ccc;
+    color: #000;
+    margin: .2em 0;
+    padding: .2em 0
+}
+body{
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    min-width: 320px;
+    background: url(../images/bg.jpg) no-repeat #1b232b;
+    background-position-x: center;
+    padding: 70px 0
+}
+body,p{
+    margin: 0
+}
+p{
+    padding: 0
+}
+.container{
+    margin: 0 auto;
+    max-width: 985px;
+    padding: 0 15px
+}
+.list,
+.nice-select{
+    background-color: #1e252b;
+    border: 1px solid #39535e;
+    height: 55px;
+    max-width: 290px;
+    margin: 20px 0;
+    width: 290px
+}
+.list .option,
+.nice-select .option{
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff
+}
+.list .option:hover,
+.nice-select .option:hover{
+    background-color: #333f49
+}
+.current{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 7px
+}
+.list{
+    height: auto;
+    margin-top: 20px;
+    width: 100%
+}
+.currency-select{
+    align-items: center;
+    background-color: hsla(0,0%,99%,.01);
+    border: 1px solid #2b3b45;
+    border-radius: 10px;
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    -ms-flex-wrap: wrap;
+    padding: 0 20px
+}
+.currency-select h2{
+    color: #fff;
+    flex: 1;
+    font-size: 32px;
+    margin: 0;
+    margin: 20px;
+    min-width: 290px;
+    -ms-flex: 1;
+    text-align: center
+}
+main{
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -ms-flex-wrap: wrap
+}
+.ethereum{
+    background-image: url(../images/ethereum-bg.jpg)
+}
+.litecoin{
+    background-image: url(../images/litecoin-bg.jpg)
+}
+.bitcoin{
+    background-image: url(../images/bitcoin-bg.jpg)
+}
+.exchange-item{
+    background-size: cover;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    max-width: 305px;
+    overflow: hidden;
+    padding: 20px 30px;
+    width: 305px
+}
+.exchange-item h3{
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    margin-top: 0
+}
+.exchange-item-row{
+    align-items: center;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    margin-top: 12px;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify
+}
+.price{
+    margin-top: 180px
+}
+.price p{
+    color: #fff;
+    font-size: 20px
+}
+.price p
+.price-ask{
+    font-size: 21px
+}
+.change-row p,
+.percent-change p{
+    color: #fff;
+    font-size: 14px
+}
+.change-row p{
+    opacity: .3
+}
+p.text-green{
+    font-size: 16px;
+    color: #70c446;
+    opacity: 1
+}
+.text-red{
+    color: #c80e24!important
+}
+.text-red span{
+    display: none
+}
+.switch{
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    width: 41px
+}
+.switch input{
+    display: none
+}
+.slider{
+    background-image: url(../images/switch-inactive.png);
+    bottom: 0;
+    cursor: pointer;
+    right: 0;
+    top: 0
+}
+.slider,
+.slider:before{
+    left: 0;
+    position: absolute;
+    transition: .4s
+}
+.slider:before{
+    background-image: url(../images/switch-button.png);
+    bottom: -4px;
+    content: "";
+    height: 24px;
+    width: 24px
+}
+input:checked+.slider{
+    background-image: url(../images/switch-active.png)
+}
+input:checked+.slider:before{
+    transform: translateX(20px)
+}
+@media only screen and (max-width: 992px){
+    main{
+        -ms-flex-pack: distribute;
+        justify-content: space-around
+    }
+    .exchange-item{
+        margin: 20px
+    }
+    .currency-select{
+        margin-bottom: 20px
+    }
+}
+@media only screen and (max-width: 768px){
+    .currency-select{
+        justify-content: center;
+        -ms-flex-pack: center;
+        padding-bottom: 20px
+    }
+    .list,
+    .nice-select{
+        margin: 0
+    }
+}
